@@ -1,0 +1,20 @@
+@media screen and (max-width: 640px) {
+  .icon-menu {
+    visibility: visible;
+  }
+}
+
+@media not screen and (max-width: 640px) {
+  .icon-menu {
+    visibility: hidden;
+  }
+}
+
+.heading-group-h1 h1 {
+  margin: 0;
+  padding-top: 1%;
+}
+
+.site-header {
+  background-color: #FFEAA9;
+}
