@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
   <title>Lab 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-  <link rel="stylesheet" type="text/css" href="styles/icons.css">
-  <link rel="stylesheet" type="text/css" href="styles/base.css">
-  <link rel="stylesheet" type="text/css" href="styles/layout.css">
-  <link rel="stylesheet" type="text/css" href="styles/modules.css">
-  <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
-  <!-- PUT YOUR RESPONSE HERE -->
 
-  <!-- REVIEW: This is the favicon -->
+  <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
+  <!-- Import CSS files:
+      1. Import the normalize.css first since it normalizes all settings
+      2. Import the base.css file to give base CSS setings
+      3. Import icons.css to get them loaded
+      4. Import layout.css to configure all the global page layout details
+      5. Import modules.css for the more discrete page components -->
+  <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendor/styles/base.css">
+  <link rel="stylesheet" type="text/css" href="vendor/styles/icons.css">
+  <link rel="stylesheet" type="text/css" href="vendor/styles/layout.css">
+  <link rel="stylesheet" type="text/css" href="vendor/styles/modules.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
 </head>
 <body>
-  <!-- REVIEW: Note that the header has multiple classes. This is a perfectly normal thing in HTML/CSS, even though we have not seen it very much so far. -->
   <header class="site-header clearfix">
     <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words how they are used. -->
-    <!-- PUT YOUR RESPONSE HERE -->
+    <!-- Clearfix is a solution to the issue that occurs when items in a container are floated and the container
+         itself has a height of zero. By giving the container a clearfix class and then setting the attribute
+         clear keyword with an appropriate value the container will conform its height to the largest floated element. -->
 
     <section class="heading-group-h1">
       <h1>
@@ -28,7 +33,7 @@
       <h2>The shocking power of static pages</h2>
     </section>
     <nav class="main-nav">
-      <!-- TODO: Add a hamburger menu icon here, which will ultimately show/hide depending on screen width (desktop vs. mobile). -->
+      <div class="icon-menu"></div>
 
       <ul>
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
@@ -87,7 +92,6 @@
     </section>
   </main>
   <footer>
-    <!-- REVIEW: Note the use of &copy; below, and take a moment to look up how special characters are displayed in HTML if you are not familiar with them. -->
     &copy; 2017 Code Fellows | Static Blog | Happy Ipsum!
   </footer>
 </body>
