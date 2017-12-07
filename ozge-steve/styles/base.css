@@ -2,12 +2,18 @@
   .icon-menu {
     visibility: visible;
   }
+  img{
+    width: 100%;
+  }
 }
 
 @media not screen and (max-width: 640px) {
   .icon-menu {
     visibility: hidden;
 
+  }
+  img{
+    float:right;
   }
   li{
    display:inline-block;
