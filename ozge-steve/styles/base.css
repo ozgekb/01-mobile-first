@@ -1,19 +1,19 @@
 @media screen and (max-width: 640px) {
   .icon-menu {
     visibility: visible;
-
-  }  li{
-     
-
-    }
-
-
+  }
+  img{
+    width: 100%;
+  }
 }
 
 @media not screen and (max-width: 640px) {
   .icon-menu {
     visibility: hidden;
 
+  }
+  img{
+    float:right;
   }
   li{
    display:inline-block;
@@ -31,4 +31,10 @@
 }
 li {
   list-style-type: none;
+}
+.clearfix {
+       clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: sans-serif;
 }
