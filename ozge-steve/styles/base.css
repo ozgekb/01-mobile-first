@@ -1,9 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
 @media screen and (max-width: 640px) {
   .icon-menu {
     visibility: visible;
   }
-  img{
+  img {
     width: 100%;
+  }
+  .main-nav li {
+    border-bottom: 2px solid #ccc;
+    margin: 5px;
+    padding: 5px;
   }
 }
 
