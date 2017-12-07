@@ -1,12 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+
 @media screen and (max-width: 640px) {
   .icon-menu {
     visibility: visible;
+  }
+  img {
+    width: 100%;
+  }
+  .main-nav li {
+    border-bottom: 2px solid #ccc;
+    margin: 5px;
+    padding: 5px;
   }
 }
 
 @media not screen and (max-width: 640px) {
   .icon-menu {
     visibility: hidden;
+
+  }
+  img{
+    float:right;
+  }
+  li{
+   display:inline-block;
+   vertical-align: top;
   }
 }
 
@@ -17,4 +37,13 @@
 
 .site-header {
   background-color: #FFEAA9;
+}
+li {
+  list-style-type: none;
+}
+.clearfix {
+       clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: sans-serif;
 }
